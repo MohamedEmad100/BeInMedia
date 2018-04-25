@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/padding48"
+        android:paddingRight="@dimen/padding21"
+        android:paddingLeft="@dimen/padding21">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding5"
+            android:text="@string/sign_in"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/font_18.5"
+            android:textStyle="bold"/>
+
+        <TextView
+            style="@style/TextViewMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/padding3.5"
+            android:text="@string/welcome_message"
+            android:textColor="@color/blue_3c"
+            android:textSize="@dimen/font_12.5" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:layout_marginTop="@dimen/padding25"
+            >
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/etxtUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:padding="@dimen/padding10"
+                android:background="@drawable/backgroundblue_border"
+                android:drawableStart="@drawable/ic_email"
+                style="@style/EditText"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/grey"
+            >
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/etxtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:drawableStart="@drawable/ic_lock"
+                android:inputType="textPassword"
+                android:background="@drawable/backgroundblue_border"
+                android:padding="@dimen/padding10"
+                android:imeOptions="actionUnspecified"
+                style="@style/EditText"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <com.dd.CircularProgressButton
+            android:id="@+id/btnSignIn"
+            android:layout_width="@dimen/padding145"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding50"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            app:cpb_cornerRadius="@dimen/padding24"
+            app:cpb_selectorIdle="@color/primary_button_color"
+            app:cpb_textIdle="@string/btn_signin"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_img"/>
+
+        <RelativeLayout
+            android:id="@+id/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding35">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbar_layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_16.5"
+                    android:textColor="@color/white"
+                    android:text="PROFILE"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/padding5"
+                    style="@style/TextViewMedium"
+                    />
+
+                <ImageView
+                    android:id="@+id/imv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ic_back2"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/padding14"
+                    android:padding="@dimen/padding5"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imv_user"
+            android:layout_width="@dimen/padding105"
+            android:layout_height="@dimen/padding105"
+            app:civ_border_width="@dimen/padding4"
+            app:civ_border_color="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/header_layout"
+            android:layout_marginTop="@dimen/padding30"
+            android:src="@drawable/profile_pic"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imv_user"
+            android:layout_marginTop="@dimen/padding45"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding21"
+            android:paddingRight="@dimen/padding21">
+
+
+            <TextView
+                android:id="@+id/vtxtID"
+                android:padding="@dimen/padding10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:background="@drawable/backgroundblue_border"
+                android:drawableStart="@drawable/ic_lock"
+                style="@style/EditText" />
+
+                <TextView
+                    android:id="@+id/vtxtUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:padding="@dimen/padding10"
+                    android:drawableStart="@drawable/ic_contact"
+                    android:background="@drawable/backgroundblue_border"
+                    style="@style/EditText" />
+
+                <TextView
+                    android:id="@+id/vtxtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:padding="@dimen/padding10"
+                    android:background="@drawable/backgroundblue_border"
+                    android:drawableStart="@drawable/ic_email"
+                    style="@style/EditText" />
+
+
+                <TextView
+                    android:id="@+id/vtxtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:padding="@dimen/padding10"
+                    android:background="@drawable/backgroundblue_border"
+                    android:drawableStart="@drawable/ic_web"
+                    style="@style/EditText"
+                    />
+
+
+                <TextView
+                    android:id="@+id/vtxtRefID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:padding="@dimen/padding10"
+                    android:background="@drawable/backgroundblue_border"
+                    android:drawableStart="@drawable/ic_lock"
+                    style="@style/EditText"
+                    />
+
+            <TextView
+                android:id="@+id/vtxtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:padding="@dimen/padding10"
+                android:background="@drawable/backgroundblue_border"
+                android:drawableStart="@drawable/ic_phone"
+                style="@style/EditText"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

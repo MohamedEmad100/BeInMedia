@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">BeInMedia</string>
+
+    <!--  Splash -->
+    <string name="company_name">BE IN MEDIA</string>
+    <string name="test_app">Demo App</string>
+    <string name="transition_logo">logo</string>
+
+    <string name="login_error_title">Login failed</string>
+    <string name="login_error_message">The e-mail or password you entered is incorrect make sure that it is typed correctly </string>
+    <string name="retry">Retry</string>
+
+    <string name="sign_in">Welcome Back</string>
+    <string name="welcome_message">Sign in to your account now </string>
+    <string name="btn_signin">SIGN IN</string>
+
+    <string name="password">Password</string>
+    <string name="email">Email Adress</string>
+
+    <string name="connection_error_title">Connection failed</string>
+    <string name="connection_error_message">Sorry, unable to login. Please check your internet connection</string>
+</resources>
+

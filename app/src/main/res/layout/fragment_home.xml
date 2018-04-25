@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/toolbar_layout">
+
+        <ImageView
+            android:id="@+id/imv_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_contact"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/padding25"
+            android:layout_marginTop="@dimen/padding20"
+            android:padding="@dimen/padding5"/>
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeContainer"
+        android:layout_below="@id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/padding3"
+        android:layout_marginLeft="@dimen/padding3"
+        android:layout_marginRight="@dimen/padding3"
+        android:layout_marginTop="@dimen/padding13"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>
